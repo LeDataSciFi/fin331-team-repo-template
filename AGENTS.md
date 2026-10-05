@@ -9,6 +9,7 @@ Coding agents (Codex, Claude Code, Copilot) read this file before they work. Hum
 ## Git
 
 - **Never commit directly to `main`.** Work in your own branch (see the README's roles table), then open a pull request.
+- **Never force-push** (`git push --force`) and never rewrite shared history (`git reset --hard` on a pushed branch, `git rebase` of a shared branch) without a human's OK. Those can erase a teammate's work.
 - Commit small, logical steps with messages that say what changed ("Estimate beta from 5y daily returns", not "update").
 - Before you start work each session: `git switch main`, `git pull`, then `git switch <your-branch>` and `git merge main`.
 - Only edit the files your role owns. If you need a change in someone else's file, ask them (or open an issue).
